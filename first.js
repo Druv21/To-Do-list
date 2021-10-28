@@ -43,32 +43,7 @@ function showtask(){
   addedtasklist.innerHTML=html;
 }
 
-// function edittask(index){
-//   let addtaskbtn=document.getElementById("addtaskbtn");
-//   let savetaskbtn=document.getElementById("savetaskbtn");
-//   let saveindex=document.getElementById("saveindex");
-//   saveindex.value=index;
-//   let webtask=localStorage.getItem("localtask");
-//   let taskObj=JSON.parse(webtask);
-//   addtaskinput.value=taskObj[index];
-//   addtaskbtn.style.display="none";
-//   savetaskbtn.style.display="block";
-// }
 
-
-// let savetaskbtn=document.getElementById("savetaskbtn");
-// savetaskbtn.addEventListener("click",function(){
-//   let addtaskbtn=document.getElementById("addtaskbtn");
-//   let webtask=localStorage.getItem("localtask");
-//   let taskObj=JSON.parse(webtask);
-//   let saveindex=document.getElementById("saveindex").value;
-//   taskObj[saveindex]=addtaskinput.value;
-//   savetaskbtn.style.display="none";
-//   addtaskbtn.style.display="block";
-//   localStorage.setItem("localtask",JSON.stringify(taskObj));
-//   addtaskinput.value='';
-//   showtask();
-// })
 
 function deleteitem(index){
   let webtask=localStorage.getItem("localtask");
